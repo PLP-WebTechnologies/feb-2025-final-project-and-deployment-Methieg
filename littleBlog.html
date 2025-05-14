@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniBlog</title>
+    <style>
+        /* Simple CSS */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        
+        header {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+        }
+        
+        .nav-links a:hover {
+            color: #0066cc;
+        }
+        
+        .post {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .post h2 {
+            margin-bottom: 10px;
+        }
+        
+        .post-meta {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        
+        .read-more {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid #ddd;
+            font-size: 14px;
+            color: #666;
+        }
+        
+        /* Simple responsive design */
+        @media (max-width: 600px) {
+            .nav-links {
+                margin-top: 10px;
+                gap: 10px;
+            }
+            
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MiniBlog</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <article class="post">
+                <h2>Getting Started with Web Development</h2>
+                <div class="post-meta">May 12, 2025 | Web Development</div>
+                <p>Learning web development can seem overwhelming at first, but with the right approach, it becomes much more manageable. Start with HTML basics, then move on to CSS for styling, and finally JavaScript for interactivity.</p>
+                <a href="#" class="read-more">Read more →</a>
+            </article>
+            
+            <article class="post">
+                <h2>Why Blogging is Still Relevant</h2>
+                <div class="post-meta">May 8, 2025 | Content Creation</div>
+                <p>In an age of social media and short-form content, blogging continues to offer unique value. Blogs provide space for in-depth exploration of topics and building a dedicated audience over time.</p>
+                <a href="#" class="read-more">Read more →</a>
+            </article>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2025 MiniBlog. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        // Simple JavaScript for interactivity
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add click event to all "Read more" links
+            const readMoreLinks = document.querySelectorAll('.read-more');
+            
+            readMoreLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    alert('Full article would open here in a complete implementation.');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
